@@ -331,6 +331,7 @@ class Board {
     }
 
     clear(){
+        this.score = 0
         this.squares = create_new_squares(this.height, this.width)
         ctx.clearRect(0, 0, canvas.width, canvas.height)
         ctx.fillStyle = '#eeeeee'
